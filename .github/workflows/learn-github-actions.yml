@@ -11,9 +11,7 @@ jobs:
           export_default_credentials: true
       
       - name: Login GH CLI
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-        run: echo $token >>  key \
+        run: echo ${{ secrets.GH_TOKEN }} >>  key \
           gh auth login --with-token < key \
           gh auth status
 
