@@ -11,8 +11,9 @@ jobs:
           export_default_credentials: true
       
       - name: Login GH CLI
-        run: echo ${{ secrets.GH_TOKEN }} >>  key \
-          gh auth login --with-token < key \
+        run: |
+          echo ${{ secrets.GH_TOKEN }} >>  key 
+          gh auth login --with-token < key 
           gh auth status
 
       - name: Use gcloud CLI
