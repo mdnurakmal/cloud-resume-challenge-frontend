@@ -1,0 +1,12 @@
+
+.idea
+.DS_Store
+
+# Terraform
+modules/
+*.tfstate
+terraform.*
+.terraform
+
+# Temporary function archives
+temp/
