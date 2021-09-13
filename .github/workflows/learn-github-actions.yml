@@ -9,6 +9,13 @@ jobs:
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           export_default_credentials: true
+      
+      - name: Login GH CLI
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+        run: echo $token >>  key \
+          gh auth login --with-token < key \
+          gh auth status
 
       - name: Use gcloud CLI
         run: gcloud info
