@@ -1,2 +1,2 @@
 # cloud-resume-challenge-frontend
-cloud-resume-challenge-backend
+cloud-resume-challenge-frontend
