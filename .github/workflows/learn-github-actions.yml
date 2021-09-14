@@ -8,4 +8,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
+          repository: mdnurakmal/cloud-resume-challenge-infra
           event-type: opened
