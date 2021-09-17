@@ -7,12 +7,7 @@ const api_url =
 async function getapi(url) {
     
     // Storing response
-    const response = await fetch(url, {
-        mode: 'cors',
-        headers: {
-          'Access-Control-Allow-Origin':'*'
-        }
-      })
+    const response = await fetch(url)
     
     // Storing data in form of JSON
     var data = await response.json();
