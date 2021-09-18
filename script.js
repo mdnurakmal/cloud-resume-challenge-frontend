@@ -27,7 +27,7 @@ function hideloader() {
 // Function to define innerHTML for HTML table
 function show(data) {
 
-    let tab = "<h2>" + data[0].count + "</h2>";
+    let tab = "<h2>" + data.count + "</h2>";
 
     // Setting innerHTML as tab variable
     document.getElementById("employees").innerHTML = tab;
