@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #check if bucket exists and not empty
 gsutil -q stat gs://cloud-resume-challenge-frontend-bucket/index.html
 
