@@ -1,0 +1,15 @@
+steps:
+  - id: "Update GCS Bucket"
+    name: "gcr.io/cloud-builders/gsutil"
+    entrypoint: 'bash'
+    args:
+    - '-c' # pass what follows as a command to bash
+    - |
+      chmod +x ./updatebucket.sh
+      ./updatebucket.sh
+
+options:
+  logStreamingOption: STREAM_ON
+
+
+
