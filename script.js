@@ -30,13 +30,10 @@ function show(data) {
         `<tr>
           <th>Name</th>
          </tr>`;
-    
-    // Loop to access all rows 
-    for (let r of data.list) {
-        tab += `<tr> 
-    <td>${r.count} </td>     
+`<tr> 
+    <td>${data['count']} </td>     
 </tr>`;
-    }
+
     // Setting innerHTML as tab variable
     document.getElementById("employees").innerHTML = tab;
 }
