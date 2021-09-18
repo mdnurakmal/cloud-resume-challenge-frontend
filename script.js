@@ -1,7 +1,7 @@
 
 // api url
 const api_url = 
-      "https://cloud-resume-challenge-ouvnbq3x2q-de.a.run.app/increment";
+      "https://increment.oneclicklaunch.com";
   
 // Defining async function
 async function getapi(url) {
