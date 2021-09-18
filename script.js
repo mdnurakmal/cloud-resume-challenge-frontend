@@ -26,13 +26,13 @@ function hideloader() {
 }
 // Function to define innerHTML for HTML table
 function show(data) {
-    const myObj = JSON.parse(data);
+
     let tab = 
         `<tr>
           <th>Name</th>
          </tr>`;
 `<tr> 
-    <td>${myObj.count}</td>     
+    <td>${data.count}</td>     
 </tr>`;
 
     // Setting innerHTML as tab variable
