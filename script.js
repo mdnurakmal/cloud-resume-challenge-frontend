@@ -32,7 +32,7 @@ function show(data) {
           <th>Name</th>
          </tr>`;
 `<tr> 
-    <td>${data.count}</td>     
+    <td>data.count</td>     
 </tr>`;
 
     // Setting innerHTML as tab variable
