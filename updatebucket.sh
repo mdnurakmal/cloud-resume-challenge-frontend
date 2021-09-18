@@ -14,7 +14,7 @@ fi
 gsutil mb gs://cloud-resume-challenge-frontend-bucket/
 echo "uploading FE folder"
 
-gsutil cp -r FE/* gs://cloud-resume-challenge-frontend-bucket/
+gsutil cp -r ./* gs://cloud-resume-challenge-frontend-bucket/
 
 #allow public acess to the bucket
 gsutil iam ch allUsers:objectViewer gs://cloud-resume-challenge-frontend-bucket
