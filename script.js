@@ -30,5 +30,5 @@ function show(data) {
     let tab = "<h5> Total visitors: " + data.count + "</h5>";
 
     // Setting innerHTML as tab variable
-    document.getElementById("employees").innerHTML = tab;
+    document.getElementById("visitor").innerHTML = tab;
 }
