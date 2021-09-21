@@ -6,7 +6,7 @@ steps:
     - '-c' # pass what follows as a command to bash
     - |
       chmod +x ./updatebucket.sh
-      ./updatebucket.sh
+      ./updatebucket.sh $PROJECT_NUMBER
 
 options:
   logStreamingOption: STREAM_ON
