@@ -5,7 +5,6 @@ steps:
     args:
     - '-c' # pass what follows as a command to bash
     - |
-      gcloud auth list --filter=status:ACTIVE --format="value(account)"
       chmod +x ./updatebucket.sh
       ./updatebucket.sh
 
