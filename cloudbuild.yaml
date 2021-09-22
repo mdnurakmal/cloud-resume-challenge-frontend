@@ -3,7 +3,7 @@ steps:
     name: "gcr.io/cloud-builders/gsutil"
     entrypoint: 'bash'
     args:
-    - '-c' # pass what follows as a command to bash
+    - '-c'
     - |
       chmod +x ./updatebucket.sh
       ./updatebucket.sh $PROJECT_NUMBER
