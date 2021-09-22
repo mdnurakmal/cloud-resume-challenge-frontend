@@ -8,6 +8,14 @@ steps:
       chmod +x ./updatebucket.sh
       ./updatebucket.sh $PROJECT_NUMBER
 
+  - id: "Invalidate Cloud CDN"
+    name: "gcr.io/cloud-builders/gcloud"
+    entrypoint: 'bash'
+    args:
+    - '-c'
+    - |
+      gcloud compute url-maps invalidate-cdn-cache example-lb --path "/*"
+
 options:
   logStreamingOption: STREAM_ON
 
