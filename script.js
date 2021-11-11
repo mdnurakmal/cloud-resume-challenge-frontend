@@ -1,7 +1,7 @@
 
 // api url
 const api_url = 
-      "https://oneclicklaunch.com/increment";
+      "https://mdnurakmal.com/increment";
   
 // Defining async function
 async function getapi(url) {
